@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Кристина Полякова](https://htmlacademy.ru/profile/id144007).
-* Наставник: [Егор Тараканов](https://htmlacademy.ru/profile/id25176)
+* Наставник: [Егор Тараканов](https://htmlacademy.ru/profile/id25176).
 
 ---
 
