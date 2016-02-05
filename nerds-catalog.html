@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <nav class="main-navigation">
+          <div class="logo">
+            <a href="#"><img src="img/logo.png"></a>
+          </div>
+          <ul>
+            <li>
+              <a href="#">Студия</a>
+            </li>
+            <li>
+              <a href="#">Клиенты</a>
+            </li>
+            <li>
+              <a href="#">Магазин</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+          <div class="cart">
+            <a href="#">Корзина</a>
+          </div>
+        </nav>
+      </div>
+        <h1>Добро пожаловать в магазин готовых макетов</h1>
+      </header>
+      <main class="container">
+        <div class="main-catalog">
+          <div class="main-catalog-left">
+            <form class="constructor-form" action="https://echo.htmlacademy.ru" method="post">
+              СТОИМОСТЬ ???
+              <legend>Сетка:</legend>
+              <label>
+                <input type="radio" name="net" value="adaption" checked> Адаптивная
+              </label>
+              <label>
+                <input type="radio" name="net" value="fixed"> Фиксированная
+              </label>
+              <label>
+                <input type="radio" name="net" value="rubber"> Резиновая
+              </label>
+              <legend>Особенности:</legend>
+              <label>
+                <input type="checkbox" name="features" value="slider" id="slider-field" checked> Слайдер
+              </label>
+              <label>
+                <input type="checkbox" name="features" value="feature" id="feature-field"> Блок преимуществ
+              </label>
+              <label>
+                <input type="checkbox" name="features" value="news" id="news-field" checked> Новости
+              </label>
+              <label>
+                <input type="checkbox" name="features" value="gallery" id="gallery-field"> Галерея
+              </label>
+              <label>
+                <input type="checkbox" name="features" value="cart" id="cart-field"> Корзина
+              </label>
+              <input type="submit" value="Показать">
+            </form>
+          </div>
+          <div class="main-catalog-right">
+            <div class="main-catalog-sort">
+              <span>Сортировать:</span>
+              <ul>
+                <li>
+                  <a href="#">По цене</a>
+                </li>
+                <li>
+                  <a href="#">По типу</a>
+                </li>
+                <li>
+                  <a href="#">По функционалу</a>
+                </li>
+              </ul>
+            </div>
+            <article class="catalog-card">
+              <img class="card-img-top" src="img/points.png">
+              <img class="card-img-bottom" src="img/poster1.png">
+            </article>
+            <article class="catalog-card">
+              <img class="card-img-top chosen" src="img/points.png">
+              <img class="card-img-bottom" src="img/poster2.png">
+              <div class="card-sunset">
+                <a href="#">Sunset</a>
+                <p>Интернет-магазин с личным кабинетом</p>
+                <a class="btn price" href="#">10000 Р.</a>
+              </div>
+            </article>
+            <article class="catalog-card">
+              <img class="card-img-top" src="img/points.png">
+              <img class="card-img-bottom" src="img/poster3.png">
+            </article>
+            <article class="catalog-card">
+              <img class="card-img-top" src="img/points.png">
+              <img class="card-img-bottom" src="img/poster4.png">
+            </article>
+            <article class="catalog-card">
+              <img class="card-img-top" src="img/points.png">
+              <img class="card-img-bottom" src="img/poster5.png">
+            </article>
+            <article class="catalog-card">
+              <img class="card-img-top" src="img/points.png">
+              <img class="card-img-bottom" src="img/poster6.png">
+            </article>
+            <div class="pagination">
+              <ul>
+                <li>
+              <span class="paginator-selected">1</span>
+                </li>
+                <li>
+              <a class="paginator" href="#">2</a>
+                </li>
+                <li>
+              <a class="paginator" href="#">3</a>
+                </li>
+                <li>
+              <a class="paginator" href="#">Следующая</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="main-footer">
+          <div class="container">
+            <div class="footer-map">
+              <img src="img/map.jpeg">
+              <div class="footer-contacts">
+                <h2>Nerds design studio</h2>
+                <p>191186, Санкт-Петербург,ул. Б. Конюшенная, д. 19/8</p>
+                <p>тел. +7(812)275-75-75</p>
+                <a class="btn" href="#">Напишите нам</a>
+              </div>
+              <div class="footer-social">
+                <div class="footer-social-link">
+                  <ul>
+                    <li>
+                      <a href="#"><img src="img/social-vk.png"></a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="img/social-fb.png"></a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="img/social-inst.png"></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer-social-sale">
+                  <h2>Давайте дружить, это выгодно!</h2>
+                  <p>Скидка 10% для друзей из социальных сетей.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </footer>
