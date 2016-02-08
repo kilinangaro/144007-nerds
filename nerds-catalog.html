@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -29,26 +30,41 @@
             <a href="#">Корзина</a>
           </div>
         </nav>
-      </div>
         <h1>Добро пожаловать в магазин готовых макетов</h1>
+      </div>
       </header>
       <main class="container">
+        <div class="log-in-form">
         <form action="https://echo.htmlacademy.ru" method="post">
-          <span>Ваше имя:</span>
+          <label>Ваше имя:</label>
           <label>
            <input type="text" name="time" value="" placeholder="Представьтесь, пожалуйста">
           </label>
-          <span>Ваш e-mail:</span>
+          <label>Ваш e-mail:</label>
           <label>
            <input type="text" name="name" value="" placeholder="Для отправки ответа">
           </label>
-          <span>Текст письма:</span>
-          <textarea name="comment" id="comment-field" rows="3">В совбодной форме</textarea>
+          <label>
+            Текст письма:
+          <textarea name="comment" id="comment-field" rows="3" placeholder="В свободной форме"></textarea>
+        </label>
            <input type="submit" value="Отправить">
         </form>
+      </div>
         <div class="main-catalog">
           <div class="main-catalog-left">
             <form class="constructor-form" action="https://echo.htmlacademy.ru" method="post">
+              <legend>Стоимость:</legend>
+              <label>
+                <input type="range">
+              </label>
+              <div>
+                <span>От</span>
+                <input type="text" name="from" value="">
+                <span>До</span>
+                <input type="text" name="to" value="">
+              </div>
+              legend + input[type=range] + div > (span + input[type=text] + span + input[type=text])
               СТОИМОСТЬ ???
               <legend>Сетка:</legend>
               <label>
@@ -94,11 +110,16 @@
                 </li>
               </ul>
             </div>
+            <div class="icon-arrow">
+              <a href="#"><img src="img/icon-down.png"></a>
+              <a href="#"><img src="img/icon-up.png"></a>
+            </div>
+            <div class="catalog">
             <article class="catalog-card">
               <img class="card-img-top" src="img/points.jpg">
               <img class="card-img-bottom" src="img/poster1.jpg">
               <div class="card-info">
-                <a href="#">Aviator</a>
+                <a href="#"><span>Aviator</span></a>
                 <p>Одностраничный макет с авторским дизайном</p>
                 <a class="btn price" href="#">8000 Р.</a>
               </div>
@@ -107,7 +128,7 @@
               <img class="card-img-top chosen" src="img/pointson.jpg">
               <img class="card-img-bottom" src="img/poster2.jpg">
               <div class="card-info">
-                <a href="#">Sunset</a>
+                <a href="#"><span>Sunset</span></a>
                 <p>Интернет-магазин с личным кабинетом</p>
                 <a class="btn price" href="#">10000 Р.</a>
               </div>
@@ -116,7 +137,7 @@
               <img class="card-img-top" src="img/points.jpg">
               <img class="card-img-bottom" src="img/poster3.jpg">
               <div class="card-info">
-                <a href="#">Forte</a>
+                <a href="#"><span>Forte</span></a>
                 <p>Отличный макет для личного блога</p>
                 <a class="btn price" href="#">5000 Р.</a>
               </div>
@@ -125,7 +146,7 @@
               <img class="card-img-top" src="img/points.jpg">
               <img class="card-img-bottom" src="img/poster4.jpg">
               <div class="card-info">
-                <a href="#">Modern organic Thai</a>
+                <a href="#"><span>Modern organic Thai</span></a>
                 <p>Сайт для ресторана быстрого питания</p>
                 <a class="btn price" href="#">12000 Р.</a>
               </div>
@@ -134,7 +155,7 @@
               <img class="card-img-top" src="img/points.jpg">
               <img class="card-img-bottom" src="img/poster5.jpg">
               <div class="card-info">
-                <a href="#">Avenue</a>
+                <a href="#"><span>Avenue</span></a>
                 <p>Макет для блога о путешествиях</p>
                 <a class="btn price" href="#">8000 Р.</a>
               </div>
@@ -143,11 +164,12 @@
               <img class="card-img-top" src="img/points.jpg">
               <img class="card-img-bottom" src="img/poster6.jpg">
               <div class="card-info">
-                <a href="#">Dovetail</a>
+                <a href="#"><span>Dovetail</span></a>
                 <p>Интернет-магазин с галереей товаров</p>
                 <a class="btn price" href="#">14000 Р.</a>
               </div>
             </article>
+          </div>
             <div class="pagination">
               <ul>
                 <li>
@@ -168,9 +190,10 @@
         </div>
       </main>
       <footer class="main-footer">
+        <div class="footer-map">
+          <img src="img/map.jpg">
+        </div>
           <div class="container">
-            <div class="footer-map">
-              <img src="img/map.jpeg">
               <div class="footer-contacts">
                 <h2>Nerds design studio</h2>
                 <p>191186, Санкт-Петербург,ул. Б. Конюшенная, д. 19/8</p>
@@ -196,6 +219,5 @@
                   <p>Скидка 10% для друзей из социальных сетей.</p>
                 </div>
               </div>
-            </div>
           </div>
       </footer>

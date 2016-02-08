@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -30,21 +31,22 @@
           </div>
         </nav>
         <div class="slider">
-          <div class="slider block">
+          <div class="slider-block">
           <h2 class="slider-block-name">Долго, дорого, скурпулезно.</h2>
           <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
           <a class="btn info" href="#">Узнать больше</a>
         </div>
-        <div class="slider block">
+        <div class="slider-block">
           <h2>Любите ли вы математику, как любим ее мы?</h2>
           <p>Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность все просчитать</p>
           <a class="btn info" href="#">Узнать больше</a>
         </div>
-        <div class="slider block">
+        <div class="slider-block">
           <h2>Только наркотики, только хардкор!</h2>
           <p>Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</p>
           <a class="btn info" href="#">Узнать больше</a>
         </div>
+        <div class="slider-page">
           <ul>
             <li>
               <a href="#"><img src="img/slider1.png"></a>
@@ -57,10 +59,13 @@
             </li>
           </ul>
         </div>
+        </div>
       </div>
     </header>
     <main class="container">
+      <div class="log-in-form">
       <form action="https://echo.htmlacademy.ru" method="post">
+         <a href="#"><img src="img/cross.png"></a>
         <span>Ваше имя:</span>
         <label>
          <input type="text" name="time" value="" placeholder="Представьтесь, пожалуйста">
@@ -69,26 +74,27 @@
         <label>
          <input type="text" name="name" value="" placeholder="Для отправки ответа">
         </label>
-        <span>Текст письма:</span>
-        <textarea name="comment" id="comment-field" rows="3">В совбодной форме</textarea>
+        <label>Текст письма:</label>
+        <textarea name="comment" id="comment-field" rows="3" placeholder="В свободной форме"></textarea>
          <input type="submit" value="Отправить">
       </form>
+    </div>
       <div class="features">
         <div class="features-item">
           <img src="img/img1.png">
-          <span>Веб-сайты</span>
+          <h2>Веб-сайты</h2>
           <p>Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
           <a class="btn" href="#">Заказать</a>
         </div>
         <div class="features-item">
           <img src="img/img2.png">
-          <span>Приложения</span>
+          <h2>Приложения</h2>
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
           <a class="btn" href="#">Заказать</a>
         </div>
         <div class="features-item">
           <img src="img/img3.png">
-          <span>Презентации</span>
+          <h2>Презентации</h2>
           <p>Вы даже не подозреваете, насколько Вы изумительны!</p>
           <a class="btn" href="#">Заказать</a>
         </div>
@@ -97,9 +103,9 @@
       <div class="information">
         <div class="index-content">
           <div class="index-content-left">
-            <h1>Мы маленькая, но гордая дизайн-студия из Краснодара.</h1>
-            <p>Испоедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
-            <p class="bold">Выпоолняем заказы на разработку:</p>
+            <p><b>Мы маленькая, но гордая дизайн-студия из Краснодара.</b></p>
+            <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
+            <p><b>Выполняем заказы на разработку:</b></p>
             <ul>
               <li>Веб-сайтов любой сложности</li>
               <li>Мобильных приложений для iOS и Android</li>
@@ -109,7 +115,7 @@
           <div class="index-content-right">
             <img src="img/logo.png">
             <span>Since 2004</span>
-            <p class="bold">Как мы работаем:</p>
+            <p><b>Как мы работаем:</b></p>
             <ul>
               <li>С самоотдачей 146%</li>
               <li>Соблюдая сроки на 100%</li>
@@ -120,21 +126,22 @@
       </div>
       <hr>
       <div class="index-partner">
-        <div class="index-partner-gluk">
+        <div>
           <a href="#"><img src="img/partner1.png"></a>
         </div>
-        <div class="index-partner-html">
+        <div>
           <a href="#"><img src="img/partner2.png"></a>
         </div>
-        <div class="index-partner-barber">
+        <div>
           <a href="#"><img src="img/partner3.png"></a>
         </div>
       </div>
     </main>
     <footer class="main-footer">
+      <div class="footer-map">
+        <img src="img/map.jpg">
+      </div>
         <div class="container">
-          <div class="footer-map">
-            <img src="img/map.jpмg">
             <div class="footer-contacts">
               <h2>Nerds design studio</h2>
               <p>191186, Санкт-Петербург,ул. Б. Конюшенная, д. 19/8</p>
@@ -160,7 +167,6 @@
                 <p>Скидка 10% для друзей из социальных сетей.</p>
               </div>
             </div>
-          </div>
         </div>
     </footer>
   </body>
