@@ -6,12 +6,12 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header-catalog clearfix;">
       <div class="container">
-        <nav class="main-navigation">
-          <div class="logo">
+         <div class="logo">
             <a href="#"><img src="img/logo.png"></a>
           </div>
+        <nav class="main-navigation">
           <ul>
             <li>
               <a href="#">Студия</a>
@@ -26,15 +26,16 @@
               <a href="#">Контакты</a>
             </li>
           </ul>
-          <div class="cart">
+        </nav>
+        <div class="cart">
             <a href="#">Корзина</a>
           </div>
-        </nav>
-        <h1>Добро пожаловать в магазин готовых макетов</h1>
+        <h1 class="nerds-title">Добро пожаловать в магазин готовых макетов</h1>
       </div>
       </header>
       <main class="container">
-        <div class="log-in-form">
+
+        <!---<div class="log-in-form">
         <form action="https://echo.htmlacademy.ru" method="post">
           <a href="#"><img src="img/cross.png"></a>
           <label>
@@ -51,8 +52,8 @@
         </label>
            <input type="submit" value="Отправить">
         </form>
-      </div>
-        <div class="main-catalog">
+      </div> --->
+        <div class="main-catalog clearfix">
           <div class="main-catalog-left">
             <form class="constructor-form" action="https://echo.htmlacademy.ru" method="post">
               <legend>Стоимость:</legend>
@@ -94,7 +95,7 @@
               <input type="submit" value="Показать">
             </form>
           </div>
-          <div class="main-catalog-right">
+          <div class="main-catalog-right clearfix">
             <div class="main-catalog-sort">
               <span>Сортировать:</span>
               <ul>
@@ -120,7 +121,7 @@
                 <span></span>
                 <span></span>
               </div>
-              <img class="card-img" src="img/poster1.jpg">
+              <img class="card-img" src="img/poster1.jpg" width="240" height="240">
               <div class="card-info">
                 <a href="#"><span>Aviator</span></a>
                 <p>Одностраничный макет с авторским дизайном</p>
@@ -133,7 +134,7 @@
                 <span></span>
                 <span></span>
               </div>
-              <img class="card-img" src="img/poster2.jpg">
+              <img class="card-img" src="img/poster2.jpg" width="240" height="240">
               <div class="card-info">
                 <a href="#"><span>Sunset</span></a>
                 <p>Интернет-магазин с личным кабинетом</p>
@@ -146,7 +147,7 @@
                 <span></span>
                 <span></span>
               </div>
-              <img class="card-img" src="img/poster3.jpg">
+              <img class="card-img" src="img/poster3.jpg" width="240" height="240">
               <div class="card-info">
                 <a href="#"><span>Forte</span></a>
                 <p>Отличный макет для личного блога</p>
@@ -159,7 +160,7 @@
                 <span></span>
                 <span></span>
               </div>
-              <img class="card-img" src="img/poster4.jpg">
+              <img class="card-img" src="img/poster4.jpg" width="240" height="240">
               <div class="card-info">
                 <a href="#"><span>Modern organic Thai</span></a>
                 <p>Сайт для ресторана быстрого питания</p>
@@ -172,7 +173,7 @@
                 <span></span>
                 <span></span>
               </div>
-              <img class="card-img" src="img/poster5.jpg">
+              <img class="card-img" src="img/poster5.jpg" width="240" height="240">
               <div class="card-info">
                 <a href="#"><span>Avenue</span></a>
                 <p>Макет для блога о путешествиях</p>
@@ -185,7 +186,7 @@
                 <span></span>
                 <span></span>
               </div>
-              <img class="card-img" src="img/poster6.jpg">
+              <img class="card-img" src="img/poster6.jpg" width="240" height="240">
               <div class="card-info">
                 <a href="#"><span>Dovetail</span></a>
                 <p>Интернет-магазин с галереей товаров</p>
@@ -214,16 +215,16 @@
       </main>
       <footer class="main-footer">
         <div class="footer-map">
-          <img src="img/map.jpg">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.598942412398!2d30.320894616039354!3d59.93879686904793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1455741079894" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
-          <div class="container">
-              <div class="footer-contacts">
-                <h2>Nerds design studio</h2>
-                <p>191186, Санкт-Петербург,ул. Б. Конюшенная, д. 19/8</p>
-                <p>тел. +7(812)275-75-75</p>
-                <a class="btn" href="#">Напишите нам</a>
-              </div>
-              <div class="footer-social">
+        <div class="container footer-contacts">
+          <h2>Nerds design studio</h2>
+          <p>191186, Санкт-Петербург,ул. Б. Конюшенная, д. 19/8</p>
+          <p>тел. +7(812)275-75-75</p>
+          <a class="btn" href="#">Напишите нам</a>
+        </div>
+          <!--- *старый вариант* <div class="container clearfix">
+              <div class="footer-social clearfix">
                 <div class="footer-social-link">
                   <ul>
                     <li>
@@ -242,5 +243,28 @@
                   <p>Скидка 10% для друзей из социальных сетей.</p>
                 </div>
               </div>
+          </div> --->
+
+          <!---  новый вариант  --->
+
+          <div class="container clearfix">
+              <div class="footer-social clearfix">
+
+                  <ul>
+                    <li>
+                      <a href="#"><img src="img/social-vk.png"></a>  <!--- каритинки переделать в простой список с текстом --->
+                    </li>
+                    <li>
+                      <a href="#"><img src="img/social-fb.png"></a>  <!--- каритинки переделать в простой список с текстом --->
+                    </li>
+                    <li>
+                      <a href="#"><img src="img/social-inst.png"></a>  <!--- каритинки переделать в простой список с текстом --->
+                    </li>
+                  </ul>
+                  <h2>Давайте дружить, это выгодно!</h2>
+                  <p>Скидка 10% для друзей из социальных сетей.</p>
+              </div>
           </div>
       </footer>
+    </body>
+  </html>

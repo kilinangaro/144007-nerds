@@ -5,3 +5,365 @@ body {
   color: #000000;
   font-weight: medium;
 }
+
+html,
+body {
+   min-width: 1200px;
+   margin: 0;
+   padding: 0;
+}
+
+.clearfix::after {
+   content: "";
+
+   display: table;
+   clear: both;
+}
+
+.container {
+   width: 880px;
+   padding: 0 10px;
+   margin: 0 auto;
+}
+
+.main-header {
+  margin-bottom: 80px;
+  background-color: #eeeeee;
+/* временно   */
+  min-height: 437px;
+}
+
+.logo {
+  float: left;
+  min-height: 70px;
+  width: 140px;
+  margin-right: 140px;
+  background-color: pink;
+  margin-top: 25px;
+  margin-bottom: 35px;
+}
+
+.main-navigation {
+  float: left;
+  min-height: 70px;
+  width: 420px;
+  margin-right: 60px;
+  margin-top: 25px;
+  margin-bottom: 35px;
+  background-color: pink;
+}
+
+.cart {
+  float: right;
+  min-height: 70px;
+  width: 100px;
+  margin-right: 0;
+  margin-top: 25px;
+  margin-bottom: 35px;
+  background-color: pink;
+}
+
+/* slider мой вариант */
+
+/* .slider {
+    position: relative;
+}
+
+.slider input[type=radio] {
+    display: none;
+}
+
+.slider-inner {
+    overflow: hidden;
+}
+
+.slider-slides{
+    width: 1020px;
+}
+
+.slider-slides img {
+    float: left;
+    width: 340px;
+    height: 240px;
+}
+
+.slider-controls {
+    text-align: center;
+
+}
+
+ .slider-controls label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 3px;
+    background: #ccc;
+    cursor: pointer;
+    border: 4px solid white;
+    border-radius: 50%;
+    box-shadow: 0px 0px 2px rgba(0,0,0,.8);
+    transition: background-color .2s;
+}
+
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+    background-color: #666;
+}
+#btn-1:checked ~ .slider-inner .slider-slides {
+    transform: translate(0);
+}
+
+#btn-2:checked ~ .slider-inner .slider-slides {
+ transform: translate(-450px);
+}
+
+#btn-3:checked ~ .slider-inner .slider-slides {
+    transform: translate(-900px);
+} */
+
+.features {
+  font-size: 0;
+  background-color: white;
+}
+
+.features-item {
+  display: inline-block;
+  min-height: 300px;
+  width: 240px;
+  vertical-align: top;
+  font-size: 15px;
+  margin-right: 80px;
+  background-color: yellow;
+
+}
+
+.features-item:last-child {
+  margin-right: 0;
+}
+
+.information {
+  background-color: orange;
+}
+
+.index-content-left {
+  float: left;
+  font-size: 15px;
+  min-height: 365px;
+  margin-right: 20px;
+  width: 621px;
+  vertical-align: top;
+  background-color: yellow;
+
+}
+
+.index-content-right {
+  float: right;
+  margin-right: 0;
+  width: 230px;
+  min-height: 365px;
+  vertical-align: top;
+  background-color: yellow;
+}
+
+.hr1 {
+  margin-top : 80px;
+  margin-bottom: 70px;
+}
+
+.hr2 {
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+.hr3 {
+  margin-top: 45px;
+  margin-bottom: 83px;
+}
+
+.index-partner-img {
+  float: left;
+  bacrground-color: red;
+  width: 220px;
+  margin-right: 100px;
+  min-height: 70px;
+  background-color: blue;
+}
+
+.index-partner-img3 {
+  float: right;
+  width: 230px;
+  min-height: 70px;
+  margin-right: 0;
+  background-color: blue;
+}
+
+.main-footer {
+  position: relative;
+}
+
+.footer-map {
+  position: relative;
+  margin-bottom: 70px;
+}
+/*переделать расположение блока контактов*/
+.footer-contacts {
+  position: absolute;
+  z-index: 10;
+  top: 90px;
+  width: 250px;
+  background-color: #fff;
+  min-height: 240px;
+  left: 275px;
+}
+
+.footer-map iframe {
+  display: block;
+  width: 100%;
+  height: 417px;
+}
+
+/*старый вариант*/
+
+/*.footer-social-link {
+  float: left;
+  width: 300px;
+  margin-right: 10px;
+  min-height: 216px;
+  background-color: red;
+}
+
+.footer-social-sale {
+  float: right;
+  margin-right: 0;
+  width: 570px;
+  min-height: 216px;
+  background-color: red;
+} */
+
+.footer-social {
+  width: 880px;
+  min-height: 70px;
+  margin-bottom: 70px;
+  background-color: #fff;
+}
+
+
+/*nerds-catalog*/
+
+.main-header-catalog {
+  min-height: 328px;
+  margin-bottom: 80px;
+  background-color: #eeeeee;
+}
+
+.nerds-title {
+  margin: 57px 105px 90px 107px;
+  font-size: 40px;
+  text-align: center;
+
+}
+
+.main-catalog-left {
+  float: left;
+  min-height: 750px;
+  width: 240px;
+  margin-right: 70px;
+  background-color: red;
+}
+
+.main-catalog-right {
+  float: left;
+  width: 570px;
+  min-height: 1130px;
+  background-color: red;
+  font-size: 0;
+}
+
+.catalog-card {
+  display: inline-block;
+  min-height: 270px;
+  width: 240px;
+  margin-right: 80px;
+  margin-left: 5px;
+  margin-bottom: 80px;
+  vertical-align: top;
+}
+
+.catalog-card:nth-child(2n) {
+  margin-right: 0;
+}
+
+.catalog-card img {
+  margin-bottom: 0;
+}
+
+.main-catalog-sort {
+  float: left;
+  width: 470px;
+  min-height: 20px;
+  margin-bottom: 17px;
+  font-size: 12px;
+  margin-right: 70px;
+}
+
+.icon-errow {
+  float: right;
+  width: 30px;
+  min-height: 20px;
+  margin-right: 0;
+
+}
+
+.card-circles {
+  min-height: 30px;
+  width: 240px;
+  border-top-radius: 10px;
+  background-color: #f1f1f1;
+}
+/*почему не работает свойство?*/
+.card-circles:nth-child(2) {
+  background-color: #797979;
+}
+/*как наложить блоки на картинки сверху?*/
+/*
+.card-info {
+  min-height: 200px;
+  width: 200px;
+  background-color: #fff;
+  margin: 20px;
+  font-size: 12px;
+} */
+
+.pagination {
+  float: left;
+  width: 100%;
+  min-height: 40px;
+  margin-bottom: 79px;
+  background-color: pink;
+  font-size: 12px;
+}
+
+
+
+
+
+/*======================================
+ Системное оформление - не изменять
+=======================================*/
+
+body {
+  padding: 3px;
+}
+
+body > *,
+body > * > *,
+body > * > * > * {
+  position: relative;
+}
+
+
+body > * {
+  background: rgba(0, 128, 0, 0.2);
+  box-shadow: 0 0 0 3px green;
+}
