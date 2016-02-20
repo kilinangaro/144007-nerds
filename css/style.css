@@ -1,14 +1,15 @@
 body {
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", "Arial" sans-serif;
+  font-weight: 500;
   font-size: 16px;
-  line-height: 1;
+  line-height: 22px;
   color: #000000;
-  font-weight: medium;
+  /*text-transform: uppercase;*/
 }
 
 html,
 body {
-   min-width: 1200px;
+   min-width: 900px;
    margin: 0;
    padding: 0;
 }
@@ -30,6 +31,7 @@ body {
 .main-header {
   margin-bottom: 80px;
   background-color: #eeeeee;
+  color: #000000;
 /* временно   */
   min-height: 437px;
 }
@@ -41,27 +43,82 @@ body {
   margin-right: 140px;
   background-color: pink;
   margin-top: 25px;
-  margin-bottom: 35px;
+
 }
 
 .main-navigation {
   float: left;
-  min-height: 70px;
-  width: 420px;
-  margin-right: 60px;
+  min-height: 75px;
+  width: 440px;
+  margin-right: 40px;
   margin-top: 25px;
-  margin-bottom: 35px;
-  background-color: pink;
+}
+
+.main-navigation a {
+  display: block;
+  padding: 30px 20px 50px 0px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.main-navigation a:hover {
+  color: #fb565a;
+}
+
+.main-navigation ul {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   font-size: 0;
+}
+
+.main-navigation li {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  line-height: 30px;
 }
 
 .cart {
   float: right;
   min-height: 70px;
-  width: 100px;
+  max-width: 100px;
   margin-right: 0;
   margin-top: 25px;
   margin-bottom: 35px;
   background-color: pink;
+}
+
+.cart-box {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  padding: 30px 0px 50px 30px;
+  font-size: 14px;
+  line-height: 30px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.cart-box:hover {
+  color: #fb565a;
+}
+
+.cart-box::before {
+  position: absolute;
+  top: 35px;
+  left: 5px;
+  opacity: 0.3;
+  content: '';
+  width: 18px;
+  height: 18px;
+  background: #ff0000 /*transparent*/ url("img/sprite.png") no-repeat;
+  background-position: -1px -15px;
+}
+
+.cart-box:hover::before {
+  opacity: 1;
+  color: #fb565a;
 }
 
 /* slider мой вариант */
@@ -261,7 +318,10 @@ body {
 .nerds-title {
   margin: 57px 105px 90px 107px;
   font-size: 40px;
+  line-height: 1.3;
+  font-weight: 500;
   text-align: center;
+  margin-bottom: 85px;
 
 }
 
